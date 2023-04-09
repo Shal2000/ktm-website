@@ -13,9 +13,11 @@ const Navbar = () => {
       width="100%"
       zIndex={100}
       position="fixed"
+      bgcolor="white"
     >
       <Box
-        height={{ md: "80px", xs: "125px" }}
+        zIndex={100}
+        height={{ md: "80px", xs: "115px" }}
         borderBottom={`1px solid ${colors.gray}`}
         display="flex"
         alignItems={{ md: "center", xs: "flex-start" }}
@@ -37,11 +39,7 @@ const Navbar = () => {
             mt={{ md: 0, xs: 1 }}
           >
             {socialLinks?.map((item) => (
-              <CustomIconButton
-                key={item?.icon}
-                icon={item?.icon}
-                link={item?.link}
-              />
+              <CustomIconButton key={item?.icon} data={item} />
             ))}
           </Box>
         </Box>
@@ -54,11 +52,7 @@ const Navbar = () => {
         >
           <Box display={{ md: "flex", xs: "none" }} alignItems="center" gap={3}>
             {socialLinks?.map((item) => (
-              <CustomIconButton
-                key={item?.icon}
-                icon={item?.icon}
-                link={item?.link}
-              />
+              <CustomIconButton key={item?.icon} data={item} />
             ))}
           </Box>
           <CustomButton text="Subscribe" backgroundColor={colors.yellow} />

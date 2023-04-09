@@ -2,10 +2,10 @@ import { Box, IconButton, Typography } from "@mui/material";
 import Link from "next/link";
 import { colors } from "../../data/colors";
 
-const CustomIconButton = ({ icon, link, text }) => {
+const CustomIconButton = ({ data }) => {
   return (
-    <Box>
-      <Link href={link}>
+    <Box display="flex" alignItems="center">
+      <Link href={data?.link}>
         <IconButton
           variant="contained"
           size="large"
@@ -13,17 +13,24 @@ const CustomIconButton = ({ icon, link, text }) => {
             backgroundColor: "#FFF3CD",
             color: colors.black,
             boxShadow: "none",
-            fontSize: "16px",
+            fontSize: "20px",
             "&:hover": {
               backgroundColor: "#FFF3CD",
               boxShadow: "none",
             },
           }}
         >
-          {icon}
+          {data?.icon}
         </IconButton>
       </Link>
-      <Typography>{text}</Typography>
+      {data?.data && (
+        <Typography
+          fontSize={{ md: "16px", sm: "14px", xs: "13px" }}
+          px={{ sm: 1, xs: "4px" }}
+        >
+          {data?.data}
+        </Typography>
+      )}
     </Box>
   );
 };

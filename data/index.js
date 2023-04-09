@@ -15,3 +15,16 @@ export const socialLinks = [
     link: "www.youtube.com",
   },
 ];
+
+export const contactChannel = [
+  {
+    data: "09442469774",
+    icon: <FaFacebookF />,
+    link: "www.youtube.com",
+  },
+  {
+    data: "khawthwarmel@gmail.com",
+    icon: <FaFacebookF />,
+    link: "www.youtube.com",
+  },
+];
