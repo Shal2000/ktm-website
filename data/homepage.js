@@ -12,4 +12,28 @@ export const homepageContent = {
 
   vision:
     "Khaw Thwar Mel's vision extends beyond the deaf community. We aim to foster a more inclusive society in which individuals with disabilities have equal access to technology, education, and employment opportunities. ",
+  values: [
+    {
+      text: "Social Responsibility",
+      icon: "/assets/social responsibility.svg",
+    },
+    {
+      text: "Equity",
+      icon: "/assets/equity.svg",
+    },
+    {
+      text: "Innovation",
+      icon: "/assets/innovation.svg",
+    },
+    {
+      text: "Inclusivity",
+      icon: "/assets/inclusivity.svg",
+    },
+    {
+      text: "Accessibility",
+      icon: "/assets/accessibility.svg",
+    },
+  ],
+  motto:
+    "We believe in conducting ourselves with a high level of social responsibility, fostering a diverse workforce, ensuring accessibility for all, and embracing innovation by actively seeking out new and creative solutions to the challenges we face.",
 };
