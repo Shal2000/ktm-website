@@ -32,7 +32,7 @@ const AboutUs = () => {
         >
           {homepageContent?.aboutUs.map((item, index) => (
             <Typography
-              fontSize={{ xl: 28, lg: 20, md: 18, sm: 16, xs: 14 }}
+              fontSize={{ xl: 28, lg: 24, md: 20, sm: 18, xs: 14 }}
               fontWeight={500}
               key={index}
               textAlign="center"

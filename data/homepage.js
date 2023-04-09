@@ -7,4 +7,9 @@ export const homepageContent = {
     " We strive to address the difficulties that the deaf community faces while also fulfilling their skill requirements and providing job opportunities in the future. ",
     "We are also trying to generate a valuable dataset for the Myanmar AI community to build a strong social enterprise that will make a lasting impact on both the disabled and AI community.",
   ],
+  mission:
+    "Our mission is to accomplish that by leveraging technology and bringing the disabled community not to be left behind in terms of lifestyles and trends.",
+
+  vision:
+    "Khaw Thwar Mel's vision extends beyond the deaf community. We aim to foster a more inclusive society in which individuals with disabilities have equal access to technology, education, and employment opportunities. ",
 };
