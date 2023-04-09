@@ -9,7 +9,6 @@ const Navbar = () => {
   return (
     <Box
       px={{ lg: "50px", md: "30px", sm: "20px", xs: "20px" }}
-      py={{ md: 1, xs: "20px" }}
       width="100%"
       zIndex={100}
       position="fixed"
@@ -17,7 +16,8 @@ const Navbar = () => {
     >
       <Box
         zIndex={100}
-        height={{ md: "80px", xs: "115px" }}
+        py={{ md: 1, xs: "20px" }}
+        height={{ md: "80px", xs: "140px" }}
         borderBottom={`1px solid ${colors.gray}`}
         display="flex"
         alignItems={{ md: "center", xs: "flex-start" }}
@@ -26,7 +26,7 @@ const Navbar = () => {
         <Box height="100%" width="100%">
           <Box
             position="relative"
-            height={{ md: "70px", xs: "50px" }}
+            height={{ md: "65px", xs: "50px" }}
             width={{ xl: "170px", md: "160px", xs: "120px" }}
             mb={{ md: 0, xs: "4px" }}
           >

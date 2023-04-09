@@ -8,7 +8,7 @@ const HomePageHero = () => {
       margin="auto"
       maxWidth={{ xl: "85%", lg: "1300px", xs: "100%" }}
       paddingTop={{ md: "80px", xs: "125px" }}
-      height={{ md: "95vh", xs: "fit-content" }}
+      height={{ md: "100vh", xs: "fit-content" }}
       display="flex"
       alignItems="center"
       gap={{ xl: 12, lg: 6, md: 2, sm: 2, xs: "8px" }}

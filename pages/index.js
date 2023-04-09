@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
+import HelpingHand from "../components/HelpingHand";
 import HomePageHero from "../components/HomePageHero";
 import Mission from "../components/Mission";
 import Navbar from "../components/Navbar";
@@ -14,6 +15,7 @@ export default function Home() {
       <HomePageHero />
       <AboutUs />
       <Mission />
+      <HelpingHand />
       <OurValues />
       <OurMotto />
       <Footer />

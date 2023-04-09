@@ -1,5 +1,6 @@
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 
 export const socialLinks = [
   {
@@ -19,12 +20,12 @@ export const socialLinks = [
 export const contactChannel = [
   {
     data: "09442469774",
-    icon: <FaFacebookF />,
+    icon: <FaPhoneAlt />,
     link: "www.youtube.com",
   },
   {
     data: "khawthwarmel@gmail.com",
-    icon: <FaFacebookF />,
+    icon: <MdEmail />,
     link: "www.youtube.com",
   },
 ];
