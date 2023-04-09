@@ -1,0 +1,19 @@
+.input {
+  width: 100%;
+  outline: none;
+  padding: 0 12px;
+  border-radius: 5px;
+  border-width: 0px;
+  height: 50px;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  /* border-color: 1px solid #dfdfdf; */
+  box-shadow: none;
+}
+
+@media screen and (max-width: 900px) {
+  .input {
+    height: 40px;
+    font-size: 14px;
+  }
+}
