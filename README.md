@@ -20,7 +20,13 @@ Connect with us on Instagram, and LinkedIn for more insightful updates.
 Please find the link below.
 
 ```bash
-https://www.linkedin.com/company/khaw-thwar-mel/
-https://www.instagram.com/khaw_thwar_mel/
 https://www.facebook.com/profile.php?id=100091575511271
+```
+
+```bash
+https://www.instagram.com/khaw_thwar_mel/
+```
+
+```bash
+https://www.linkedin.com/company/khaw-thwar-mel/
 ```
