@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Khaw Thwar Mel
 
-## Getting Started
+This is source code of Khaw Thwar Mel organization's official website.
 
-First, run the development server:
+## About us
+
+“Khaw Thwar Mel" is a social enterprise dedicated to supporting the disabled community. Our primary missions include leveraging technology and bringing the disabled community not to be left behind in terms of lifestyles and trends. Furthermore, we aim to promote the practical application of AI technology in Myanmar through the development and demonstration of a specific standardized dataset.
+
+Additionally, our steadfast contributions to society include the following:
+- Enabling the deaf community to learn Myanmar Sign Language at their convenience and from any location.
+- Facilitating the fluent reading and writing of both Myanmar and English for the deaf community.
+- Offering tailor-made technological courses suited to the needs of deaf individuals.
+- Ensuring the deaf community possesses necessary skills to meet job requirements.
+- Providing job opportunities at "Khaw Thwar Mel" for the deaf community.
+
+As our core brand values encompass social responsibility, inclusivity, innovation, and accessibility, we are committed to implementing sustainable practices in our operations, fostering a diverse and inclusive workplace culture, driving innovation in our services, and ensuring that our offerings are accessible to all customers.
+We invite you to follow our page to stay engaged with our educational and valuable content, and your support would be greatly appreciated.
+
+Connect with us on Instagram, and LinkedIn for more insightful updates.
+Please find the link below.
 
 ```bash
-npm run dev
-# or
-yarn dev
+https://www.linkedin.com/company/khaw-thwar-mel/
+https://www.instagram.com/khaw_thwar_mel/
+https://www.facebook.com/profile.php?id=100091575511271
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
