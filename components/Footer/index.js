@@ -34,14 +34,14 @@ const Footer = () => {
               //   alignItems={{ sm: "flex-start", xs: "center" }}
               py={{ md: 6, sm: 4, xs: 1 }}
             >
-              <Title text="Get Notified Of Updated News" />
+              <Title text="Get Notified of Updated News" />
               <Box
                 display="flex"
                 gap={{ md: 4, sm: 2, xs: "10px" }}
                 mt={{ sm: 2, xs: "10px" }}
                 flexDirection={{ sm: "row", xs: "column" }}
               >
-                <Box width={{ md: "350px", sm: "250px", xs: "230px" }}>
+                <Box width={{ md: "295px", sm: "270px", xs: "230px" }}>
                   <Input placeholder="Enter your email here" />
                 </Box>
                 <CustomButton

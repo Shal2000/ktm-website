@@ -12,6 +12,8 @@ const Title = ({ style, color, text, textColor }) => {
             px={{ md: 4, xs: 3 }}
             py={1}
             margin="auto"
+            borderRadius={{ md: "10px", xs: "7px" }}
+            // border={`2px solid ${textColor}`}
           >
             <Typography
               fontSize={{ lg: 30, md: 28, sm: 24, xs: 16 }}

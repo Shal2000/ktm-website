@@ -21,7 +21,7 @@ export const contactChannel = [
   {
     data: "09442469774",
     icon: <FaPhoneAlt />,
-    link: "www.youtube.com",
+    link: "tel:+959442469774",
   },
   {
     data: "khawthwarmel@gmail.com",

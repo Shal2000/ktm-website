@@ -6,7 +6,7 @@ const HomePageHero = () => {
   return (
     <Box
       margin="auto"
-      maxWidth={{ xl: "85%", lg: "1300px", xs: "100%" }}
+      maxWidth={{ xl: "90%", lg: "1300px", xs: "100%" }}
       paddingTop={{ md: "80px", xs: "125px" }}
       height={{ md: "100vh", xs: "fit-content" }}
       display="flex"
@@ -18,15 +18,15 @@ const HomePageHero = () => {
         my={{ md: 0, xs: 4 }}
         position="relative"
         height={{
-          xl: "700px",
-          lg: "600px",
+          // xl: "600px",
+          lg: "580px",
           md: "500px",
           sm: "330px",
           xs: "175px",
         }}
         width={{
-          xl: "525px",
-          lg: "450px",
+          // xl: "525px",
+          lg: "400px",
           md: "375px",
           sm: "250px",
           xs: "130px",
