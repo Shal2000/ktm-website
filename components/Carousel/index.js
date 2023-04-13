@@ -19,7 +19,7 @@ const Carousel = () => {
         centeredSlides={true}
       >
         {homepageContent?.helpingHandList?.map((data, index) => (
-          <SwiperSlide key={data}>
+          <SwiperSlide key={index}>
             <CarouselItem {...{ data, index }} />
           </SwiperSlide>
         ))}
