@@ -5,15 +5,15 @@ import { MdEmail } from "react-icons/md";
 export const socialLinks = [
   {
     icon: <FaFacebookF />,
-    link: "www.youtube.com",
+    link: "https://www.facebook.com/profile.php?id=100091575511271",
   },
   {
     icon: <AiFillInstagram />,
-    link: "www.youtube.com",
+    link: "https://www.instagram.com/khaw_thwar_mel/",
   },
   {
     icon: <FaLinkedinIn />,
-    link: "www.youtube.com",
+    link: "https://www.linkedin.com/company/khaw-thwar-mel/",
   },
 ];
 
@@ -21,11 +21,11 @@ export const contactChannel = [
   {
     data: "09442469774",
     icon: <FaPhoneAlt />,
-    link: "www.youtube.com",
+    link: "tel:+959442469774",
   },
   {
     data: "khawthwarmel@gmail.com",
     icon: <MdEmail />,
-    link: "www.youtube.com",
+    link: "mailto:khawthwarmel@gmail.com",
   },
 ];

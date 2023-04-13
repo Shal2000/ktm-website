@@ -38,8 +38,8 @@ const Navbar = () => {
             gap={1}
             mt={{ md: 0, xs: 1 }}
           >
-            {socialLinks?.map((item) => (
-              <CustomIconButton key={item?.icon} data={item} />
+            {socialLinks?.map((item, index) => (
+              <CustomIconButton key={index} data={item} />
             ))}
           </Box>
         </Box>
@@ -51,8 +51,8 @@ const Navbar = () => {
           gap={3}
         >
           <Box display={{ md: "flex", xs: "none" }} alignItems="center" gap={3}>
-            {socialLinks?.map((item) => (
-              <CustomIconButton key={item?.icon} data={item} />
+            {socialLinks?.map((item, index) => (
+              <CustomIconButton key={index} data={item} />
             ))}
           </Box>
           <CustomButton text="Subscribe" backgroundColor={colors.yellow} />

@@ -1,10 +1,11 @@
 import { Button } from "@mui/material";
 import { colors } from "../../data/colors";
 
-const CustomButton = ({ text, backgroundColor }) => {
+const CustomButton = ({ text, backgroundColor, onClickHandler }) => {
   return (
     <Button
       variant="contained"
+      onClick={onClickHandler}
       sx={{
         backgroundColor: backgroundColor,
         // fontFamily: "Archivo!important",

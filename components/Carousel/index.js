@@ -2,9 +2,10 @@ import { Box } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { homepageContent } from "../../data/homepage";
 import CarouselItem from "./CarouselItem";
-import { Navigation } from "swiper";
+import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Carousel = () => {
   return (
@@ -12,12 +13,13 @@ const Carousel = () => {
       <Swiper
         spaceBetween={50}
         navigation={true}
-        modules={[Navigation]}
+        pagination={true}
+        modules={[Navigation, Pagination]}
         slidesPerView={1}
         centeredSlides={true}
       >
         {homepageContent?.helpingHandList?.map((data, index) => (
-          <SwiperSlide key={data}>
+          <SwiperSlide key={index}>
             <CarouselItem {...{ data, index }} />
           </SwiperSlide>
         ))}

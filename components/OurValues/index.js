@@ -32,7 +32,7 @@ const OurValues = () => {
         </Typography>
         <Box
           display="flex"
-          alignItems="center"
+          alignItems="flex-start"
           flexWrap="wrap"
           justifyContent="center"
           mt={{ lg: 2, xs: 1 }}
