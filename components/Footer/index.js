@@ -1,22 +1,67 @@
-import { Box, Typography } from "@mui/material";
+import { Alert, Box, Snackbar, Typography } from "@mui/material";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
 import { contactChannel, socialLinks } from "../../data";
 import { colors } from "../../data/colors";
 import CustomButton from "../CustomButton";
 import CustomIconButton from "../CustomIconButton";
 import Input from "../Input";
 import Title from "../Title";
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [open, setOpen] = useState(false);
+
+  // const handleClick = () => {
+  //   setOpen(true);
+  // };
+
+  const handleClose = (reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setEmail("");
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE,
+        {
+          from_name: email,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        setOpen(true);
+      });
+  };
   return (
     <Box>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#dfdfdf"
-          fill-opacity="1"
+          fillOpacity="1"
           d="M0,160L80,160C160,160,320,160,480,181.3C640,203,800,245,960,245.3C1120,245,1280,203,1360,181.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
         ></path>
       </svg>
+
+      <Snackbar
+        open={open}
+        autoHideDuration={3000}
+        onClose={handleClose}
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+      >
+        <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
+          Successfully subscribed !
+        </Alert>
+      </Snackbar>
       <Box bgcolor={colors.gray} mt="-5px" px={{ lg: 12, sm: 2, xs: 2 }}>
         <Box maxWidth="1440px" margin="auto" pb={4}>
           <Box display="flex" justifyContent="space-between" gap={2}>
@@ -34,19 +79,24 @@ const Footer = () => {
               //   alignItems={{ sm: "flex-start", xs: "center" }}
               py={{ md: 6, sm: 4, xs: 1 }}
             >
-              <Title text="Get Notified Of Updated News" />
+              <Title text="Get Notified of Updated News" />
               <Box
                 display="flex"
                 gap={{ md: 4, sm: 2, xs: "10px" }}
                 mt={{ sm: 2, xs: "10px" }}
                 flexDirection={{ sm: "row", xs: "column" }}
               >
-                <Box width={{ md: "350px", sm: "250px", xs: "230px" }}>
-                  <Input placeholder="Enter your email here" />
+                <Box width={{ md: "295px", sm: "270px", xs: "230px" }}>
+                  <Input
+                    placeholder="Enter your email here"
+                    onChangeHandler={(e) => setEmail(e.target.value)}
+                    value={email}
+                  />
                 </Box>
                 <CustomButton
                   text="Subscribe"
                   backgroundColor={colors.yellow}
+                  onClickHandler={sendEmail}
                 />
               </Box>
             </Box>
@@ -64,8 +114,8 @@ const Footer = () => {
               mt={2}
             >
               <Box display="flex" gap={{ md: 2, xs: 1 }}>
-                {socialLinks?.map((item) => (
-                  <CustomIconButton key={item.icon} data={item} />
+                {socialLinks?.map((item, index) => (
+                  <CustomIconButton key={index} data={item} />
                 ))}
               </Box>
               <Box
@@ -75,8 +125,8 @@ const Footer = () => {
                 // flexDirection={{ sm: "row", xs: "column" }}
                 gap={1}
               >
-                {contactChannel?.map((item) => (
-                  <CustomIconButton key={item.icon} data={item} />
+                {contactChannel?.map((item, index) => (
+                  <CustomIconButton key={index} data={item} />
                 ))}
               </Box>
             </Box>

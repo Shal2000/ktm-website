@@ -1,6 +1,7 @@
 import { Typography, Box } from "@mui/material";
 import Image from "next/image";
 import { colors } from "../../data/colors";
+import parse from "html-react-parser";
 
 const ValueIcon = ({ text, icon }) => {
   return (
@@ -24,7 +25,7 @@ const ValueIcon = ({ text, icon }) => {
         color="white"
         textAlign="center"
       >
-        {text}
+        {parse(text)}
       </Typography>
     </Box>
   );
