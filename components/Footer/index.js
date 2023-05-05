@@ -8,10 +8,14 @@ import CustomIconButton from "../CustomIconButton";
 import Input from "../Input";
 import Title from "../Title";
 import { useState } from "react";
+//import { useRef } from "react";
 
 const Footer = () => {
+  //const footerRef = useRef(null);
   const [email, setEmail] = useState("");
   const [open, setOpen] = useState(false);
+  const [errorMsg, setErrorMsg] = useState();
+  const [successMsg, setSuccessMsg] = useState();
 
   // const handleClick = () => {
   //   setOpen(true);
@@ -25,8 +29,19 @@ const Footer = () => {
     setOpen(false);
   };
 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   const sendEmail = (e) => {
     e.preventDefault();
+    if (!emailRegex.test(email)) {
+      setOpen(true);
+      setErrorMsg("Please enter a valid email address!");
+    } else {
+      setOpen(true);
+      setErrorMsg(null);
+      setSuccessMsg("Successfully subscribed !");
+    }
+
     setEmail("");
 
     emailjs
@@ -43,7 +58,7 @@ const Footer = () => {
       });
   };
   return (
-    <Box>
+    <Box id="footer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#dfdfdf"
@@ -58,9 +73,19 @@ const Footer = () => {
         onClose={handleClose}
         anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
       >
-        <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
-          Successfully subscribed !
-        </Alert>
+        {errorMsg ? (
+          <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
+            {errorMsg}
+          </Alert>
+        ) : (
+          <Alert
+            onClose={handleClose}
+            severity="success"
+            sx={{ width: "100%" }}
+          >
+            {successMsg}
+          </Alert>
+        )}
       </Snackbar>
       <Box bgcolor={colors.gray} mt="-5px" px={{ lg: 12, sm: 2, xs: 2 }}>
         <Box maxWidth="1440px" margin="auto" pb={4}>

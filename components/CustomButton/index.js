@@ -6,6 +6,7 @@ const CustomButton = ({ text, backgroundColor, onClickHandler }) => {
     <Button
       variant="contained"
       onClick={onClickHandler}
+      //onClick={onClick}
       sx={{
         backgroundColor: backgroundColor,
         // fontFamily: "Archivo!important",

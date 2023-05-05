@@ -4,8 +4,13 @@ import CustomButton from "../../components/CustomButton";
 import Image from "next/image";
 import { socialLinks } from "../../data";
 import CustomIconButton from "../CustomIconButton";
+import { Link } from "react-scroll";
+//import React, { useRef } from "react";
 
 const Navbar = () => {
+  //const footerRef = useRef(null);
+  //console.log(footerRef.current);
+
   return (
     <Box
       px={{ lg: "50px", md: "30px", sm: "20px", xs: "20px" }}
@@ -55,7 +60,15 @@ const Navbar = () => {
               <CustomIconButton key={index} data={item} />
             ))}
           </Box>
-          <CustomButton text="Subscribe" backgroundColor={colors.yellow} />
+          <Link
+            to="footer"
+            spy={true}
+            smooth={true}
+            offset={150}
+            duaration={200}
+          >
+            <CustomButton text="Subscribe" backgroundColor={colors.yellow} />
+          </Link>
         </Box>
       </Box>
     </Box>
